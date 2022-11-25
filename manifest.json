@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Xpon logwork",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+   {
+     "matches": ["https://datisan.atlassian.net/*"],
+     "js": ["index.js"]
+   }
+  ],
+  "permissions": ["activeTab", "cookies"],
+  "host_permissions": [
+    "https://datisan.atlassian.net/*",
+    "http://datisan.atlassian.net/*",
+    "*://*/*"
+  ]
+}
